@@ -1,65 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
   <head>
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/5.5.0/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/5.5.0/firebase-auth.js"></script>
-    <script defer src="/__/firebase/5.5.0/firebase-database.js"></script>
-    <script defer src="/__/firebase/5.5.0/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/5.5.0/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
+    <title>Owl Pay</title>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/2-col-portfolio.css" rel="stylesheet">
+
   </head>
+
   <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Owl Pay</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Add Bill</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Recent Activity</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Help</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Page Heading -->
+      <h1 class="my-4">Owl Pay 
+        <small>| Consolidate Your Life </small>
+      </h1>
+<!--Rent-->
+      <div class="row">
+        <div class="col-lg-6 col-xl-6 portfolio-item image-container">
+          <div class="card h-100">
+            <a href="#"><img class="utility-icon" src="https://image.flaticon.com/icons/svg/1014/1014723.svg" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Rent</a>
+              </h4>
+              <p class="card-text">Your recurring payment of <span class="billOneTotal"><b>$1000000.00</b></span> will be made on <span class="billOneDueDate"><b>Tuesday, September 25, 2018.</b></span></p>
+            </div>
+          </div>
+        </div>
+      <!--Car-->  
+        <div class="col-lg-6 col-xl-6 portfolio-item image-container">
+          <div class="card h-100">
+            <a href="#"><img class="utility-icon" src="https://image.flaticon.com/icons/svg/171/171240.svg" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Wells Fargo Dealer Services</a>
+              </h4>
+              <p class="card-text">Your recurring payment of <span class="billTwoTotal"><b>$465.55</b></span> will be made on <span class="billTwoDueDate"><b>Tuesday, September 25, 2018.</b></span></p>
+            </div>
+          </div>
+        </div>
+<!--Phone-->
+         <div class="row">
+        <div class="col-lg-6 col-xl-6 portfolio-item image-container">
+          <div class="card h-100">
+            <a href="#"><img class="utility-icon padding" src="https://image.flaticon.com/icons/svg/1022/1022958.svg" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Verizon Wireless</a>
+              </h4>
+              <p class="card-text">Your recurring payment of <span class="billOneTotal"><b>$465.55</b></span> will be made on <span class="billOneDueDate"><b>Tuesday, September 25, 2018.</b></span></p>
+            </div>
+          </div>
+        </div>
+       <!--Cable/Internet--> 
+        <div class="col-lg-6 col-xl-6 portfolio-item image-container">
+          <div class="card h-100">
+            <a href="#"><img class="utility-icon padding" src="https://image.flaticon.com/icons/svg/1002/1002288.svg" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Xfinity Cable and Internet</a>
+              </h4>
+              <p class="card-text">Your recurring payment of <span class="billTwoTotal"><b>$210.41</b></span> will be made on <span class="billTwoDueDate"><b>Tuesday, September 25, 2018.</b></span></p>
+            </div>
+          </div>
+        </div>
+
+
+      <ul class="pagination justify-content-center">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only">Previous</span>
+          </a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">3</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only">Next</span>
+          </a>
+        </li>
+      </ul>
+
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    <!-- /.container -->
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; KSU Hackathon Team I17 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
 
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
   </body>
+
 </html>

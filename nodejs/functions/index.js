@@ -8,7 +8,6 @@ app.get('/timestamp', (request, response) => {
  
 exports.app = functions.https.onRequest(app);
 
-const app = express();
 app.get('/timestamp-cached', (request, response) => {
     response.set('Cache-Control', 'public, max-age=300, s-maxage=600');
     response.send(`${Date.now()}`);
