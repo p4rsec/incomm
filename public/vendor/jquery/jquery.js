@@ -10362,3 +10362,15 @@ if ( !noGlobal ) {
 
 return jQuery;
 } );
+
+var lawn-care = $("<div class="card h-100">
+            <a href="#"><img class="utility-icon padding" src="https://image.flaticon.com/icons/svg/941/941801.svg" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Lawn Maintenance</a>
+              </h4>
+              <p class="card-text">Your recurring payment of <span class="billTwoTotal"><b>$100.00</b></span> will be made on <span class="billTwoDueDate"><b>Tuesday, September 25, 2018.</b></span></p>
+            </div>
+          </div>");
+$.append(lawn-care);
+	
