@@ -1,5 +1,7 @@
 const functions = require('firebase-functions');
 const express = require('express');
+var firebase = require('firebase');
+var firebaseui = require('firebaseui');
 
 const app = express();
 app.get('/timestamp', (request, response) => {
