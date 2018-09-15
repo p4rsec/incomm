@@ -1,11 +1,9 @@
 const functions = require('firebase-functions');
 const express = require('express');
-var firebase = require('firebase');
-var firebaseui = require('firebaseui');
 var Request = require("request");
 
-const request = express();
-request.get('/paybills', (request) => {
+const app = express();
+app.get('/paybills', (request) => {
     Request.post({
         "headers": { "x-api-key": "gFUPpwE5bUWcr0VQyB8z", "content-type": "application/json" },
         "url": "https://us-central1-incomm-hackathon-api.cloudfunctions.net/api/accounts/c92PIlyaYXQbR27iXNqi/transactions",
@@ -24,4 +22,4 @@ request.get('/paybills', (request) => {
     });
     });
 
-    exports.request = functions.https.onRequest(request);
+    exports.app = functions.https.onRequest(app);
