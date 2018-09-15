@@ -2,6 +2,7 @@ const functions = require('firebase-functions');
 const express = require('express');
 var firebase = require('firebase');
 var firebaseui = require('firebaseui');
+var Request = require("request");
 
 const app = express();
 app.get('/timestamp', (request, response) => {
@@ -9,8 +10,3 @@ app.get('/timestamp', (request, response) => {
 });
  
 exports.app = functions.https.onRequest(app);
-
-app.get('/timestamp-cached', (request, response) => {
-    response.set('Cache-Control', 'public, max-age=300, s-maxage=600');
-    response.send(`${Date.now()}`);
-});

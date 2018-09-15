@@ -3,7 +3,7 @@
    newBill.textContent = "<div class='col-lg-6 col-xl-6 portfolio-item image-container' id='lawn-maintenance'><div class='card h-100'><a href='#'><img class='utility-icon padding' src='https://image.flaticon.com/icons/svg/941/941801.svg' alt=''></a><div class='card-body'><h4 class='card-title'><a href='#''>Lawn Maintenance</a></h4><p class='card-text'>Your recurring payment of <span class='billTwoTotal'><b>$100.00</b></span> will be made on <span class='billTwoDueDate'><b>Tuesday, September 25, 2018.</b></span></p></div></div></div>";
    '.bills'.appendChild(newBill);
          }*/
-        
+//var bills = db.collection("users/test/bills");        
 let payNow = {
   title: 'Pay Now',
   total: '$2,100.00',
@@ -12,8 +12,8 @@ let payNow = {
 };
 
 let carPayment= {
-  title: 'Wells Fargo Dealer Services',
-  total: '$450.00',
+  title: 'Car Payment',
+  total: '450.00',
   date: 'Tuesday, September 25, 2018',
   image: 'https://image.flaticon.com/icons/svg/171/171240.svg',
 };
@@ -47,7 +47,7 @@ let cablePayment = {
 };
 
 
-let arr = [carPayment, phonePayment, lawnPayment, housePayment, cablePayment];
+let arr = [payNow,carPayment, phonePayment, lawnPayment, housePayment, cablePayment];
 console.log(carPayment);
 
 function template (object) {
@@ -85,7 +85,9 @@ function template (object) {
   return templateString;  
 }
 
-let stuff = arr.reduce((accumulator, currentObject) => accumulator += template(currentObject));
+let stuff = arr.reduce((accumulator, currentObject) => accumulator += template(currentObject),'');
+
 document.getElementById('container').innerHTML = stuff;
 
-
+//satasiya.kalpesh2006@gmail.com
+//skype: softwaredeveloper21
