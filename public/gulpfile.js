@@ -40,4 +40,3 @@ gulp.task('dev', ['browserSync'], function() {
   gulp.watch('./*.html', browserSync.reload);
 });
 
-
